@@ -2,7 +2,7 @@
 *.o
 
 # executables
-day*_part1 day*_part2
+day*_part2
 
 # output files
 
