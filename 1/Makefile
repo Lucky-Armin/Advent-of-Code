@@ -3,14 +3,17 @@
 
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -std=c99 -O3
-OBJ = day1_part2.o
+OBJ = day1_part1.o day1_part2.o
 
 # load library
 LDLIBS = -lm
 
-all:  day1_part2
+all:  day1_part1 day1_part2
 
-day1_part2: $(OBJ)
+day1_part1: day1_part1.o
+	$(CC) $(CFLAGS) -o $@ $^ $(LDLIBS)
+
+day1_part2: day1_part2.o
 	$(CC) $(CFLAGS) -o $@ $^ $(LDLIBS)
 
 %.o: %.c
