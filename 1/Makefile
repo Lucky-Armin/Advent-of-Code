@@ -2,7 +2,8 @@
 # Usage: make
 
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror -std=c99 -O3
+#CFLAGS = -Wall -Wextra -Werror -std=c99 -O3
+CFLAGS = -std=c99 -O3 -v
 OBJ = day1_part1.o day1_part2.o
 
 # load library
